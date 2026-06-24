@@ -1,7 +1,7 @@
 exports.handler = async (event) => {
   try {
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwO9TUVxMF0N9c3m2EURyp3C7iT3OeZ3tsfJURnfB8iItqYa5qjpuCyH5QxhtTf-6s/exec",
+    const API_URL='/.netlify/functions/get-reservations';
+const SAVE_URL='/.netlify/functions/save-reservation';
       {
         method: "POST",
         headers: {
